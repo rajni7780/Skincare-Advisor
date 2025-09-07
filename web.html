@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowGuide – AI Skincare Advisor</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, white);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      color: black;
+      font-size: 1.6rem;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: black;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 650px;
+      margin: 0 auto;
+      color: #555;
+    }
+
+    .skin-types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 5%;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      color: black;
+      margin-bottom: 1rem;
+    }
+    .card p {
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+    .btn {
+      padding: 0.7rem 1.3rem;
+      border-radius: 25px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .btn-primary {
+      background: black;
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: black;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #fff;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>GlowGuide</h1>
+    <nav>
+      <a href="rajni.html">AI Advisor</a>
+      <a href="dermatologist.html">Dermatologists section</a>
+
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Find Your Perfect Skincare Routine</h2>
+    <p>Choose your skin type below and GlowGuide will show you the best daily routine tailored for you.</p>
+  </section>
+
+  <!-- Skin Type Routines -->
+  <section class="skin-types">
+    <div class="card">
+      <h3>🌟 Oily Skin</h3>
+      <p>Balance oil and reduce acne with a gentle, mattifying routine.</p>
+      <a href="oily.html"><button class="btn btn-primary">View Routine</button></a>
+    </div>
+
+    <div class="card">
+      <h3>💧 Dry Skin</h3>
+      <p>Hydrate deeply and restore glow with nourishing skincare steps.</p>
+      <a href="dry.html"><button class="btn btn-primary">View Routine</button></a>
+    </div>
+
+    <div class="card">
+      <h3>🌿 Sensitive Skin</h3>
+      <p>Calm irritation and strengthen your skin barrier with care.</p>
+      <a href="sensitive.html"><button class="btn btn-primary">View Routine</button></a>
+    </div>
+
+    <div class="card">
+      <h3>⚖ Combination Skin</h3>
+      <p>Balance dry and oily areas with a customized skincare approach.</p>
+      <a href="combinational.html"><button class="btn btn-primary">View Routine</button></a>
+    </div>
+  </section>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/9050974007" 
+   class="whatsapp_float" target="_blank">
+   <img src="https://i.pinimg.com/736x/b1/a6/7d/b1a67d9315a05ed2f49326ef6bdc0fd5.jpg" 
+        alt="WhatsApp" width="30" height="30" />
+</a>
+
+<style>
+.whatsapp_float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 5px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.whatsapp_float:hover {
+    background-color: #20b958;
+}
+.whatsapp_float img {
+    filter: brightness(0) invert(1); /* white logo effect */
+}
+</style>
+
+  <!-- Footer -->
+  <footer>
+  <p>  © 2025 Glow-Getter Skincare.  All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Skincare Advisor</title>
+  <link rel="stylesheet" href="rajni.css" />
+
+  <!-- MediaPipe (FaceMesh + helpers) -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+</head>
+<body>
+  <header>
+    <h1>AI Skincare Advisor</h1>
+    <p>"Scan your face and see the best routine for your skin type."</p>
+  </header>
+<a href="dermatologist.html">
+    <button>Go to Dermatologist Page</button>
+  </a>
+
+
+  <main>
+    <div class="scanner">
+      <video id="video" playsinline></video>
+      <canvas id="output"></canvas>
+      <button id="scanBtn">Start Scan</button>
+    </div>
+
+    <div class="result" id="resultSection" style="display:none;">
+      
+      <p id="skinType">Skin Type: --</p>
+      <div id="routine"></div>
+    </div>
+  </main>
+
+
+  <footer>
+    <p>© 2025 Glow-Getter Skincare. All rights reserved.</p>
+  </footer>
+
+  <script src="rajni.js"></script>

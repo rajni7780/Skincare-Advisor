@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oily Cleanser</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-bottom: 1px solid #ddd;
+      background: #fff;
+      position: sticky;
+      top: 0;
+    }
+
+    header h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      padding: 15px;
+    }
+
+    .card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .card img {
+      width: 50%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 50px;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .title {
+      font-size: 13px;
+      color: #444;
+      margin: 5px 0;
+    }
+
+    .rating {
+      color: #f39c12;
+      font-size: 13px;
+    }
+
+    .price {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .price del {
+      font-size: 13px;
+      color: #888;
+      margin-left: 5px;
+    }
+
+    .offer {
+      color: green;
+      font-size: 13px;
+    }
+
+    .likes {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+    }
+    .img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+     .btn {
+      background-color: #111;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Oliy Skin Cleansers</h2>
+    <span>5 Products</span>
+  </header>
+
+  <div class="products">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="hyphen.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Hyphen</div>
+        <div class="title">Oil control daily exfoliating cleanser 2% AHA+BHA Sylicylic acid face wash</div>
+        <div class="rating">★★★★☆</div>
+        <div class="price">₹269 <del>₹299</del> <span style="color:red;">10% off</span></div>
+         <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="foxtale.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Foxtale</div>
+        <div class="title">Acne control cleanser with salicylic acid & niacinamide, controls oil & fights acne</div>
+         <div class="rating">★★★☆☆</div>
+        <div class="price">₹297 <del>₹349</del> <span style="color:red;">15% off</span></div>
+         <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+      <!-- Card 3 -->
+    <div class="card">
+      <img src="neutrogena.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Neutrogena</div>
+        <div class="title">Oil free acne cleansing face wash with 2% salicylic acid for acne for acne prone & oily skin</div>
+         <div class="rating">★★★★☆</div>
+        <div class="price">₹769 <del>₹850</del> <span style="color:red;">10% off</span></div>
+         <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+     <!-- Card 4 -->
+    <div class="card">
+      <img src="cetaphil.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Cetaphil</div>
+        <div class="title">Oily skin cleanser for combination to oliy, sensitive skin </div>
+         <div class="rating">★★★★★</div>
+        <div class="price">₹643 <del>₹699</del> <span style="color:red;">8% off</span></div>
+         <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+     <!-- Card 5 -->
+    <div class="card">
+      <img src="chemist.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Chemist at Play</div>
+        <div class="title">2% Salicylic acid facewash for oily skin with neacinamide oil cleanser for face</div>
+         <div class="rating">★★★★☆</div>
+        <div class="price">₹249 <del>₹299</del> <span style="color:red;">17% off</span></div>
+        <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+     <!-- Card 6 -->
+    <div class="card">
+      <img src="dermaco.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">The Derma Co</div>
+        <div class="title">2% Niacinamide oily skin cleanser</div>
+         <div class="rating">★★★★☆</div>
+        <div class="price">₹275 <del>₹299</del> <span style="color:red;">8% off</span></div>
+        <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+     <!-- Card 7 -->
+    <div class="card">
+      <img src="dotnkey.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Dot & Key</div>
+        <div class="title">Watermelon & Vitamin C SuperGlow Gel Face Wash for glowing skin & Spots reduction</div>
+         <div class="rating">★★★★☆</div>
+        <div class="price">₹224 <del>₹249</del> <span style="color:red;">10% off</span></div>
+        <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+     <!-- Card 8 -->
+    <div class="card">
+      <img src="cerave.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">CeraVe</div>
+        <div class="title">Foaming cleanser face wash for oily skin with hyaluronic acid, ceramides & niacinamide</div>
+         <div class="rating">★★★★☆</div>
+        <div class="price">₹494 <del>₹520</del> <span style="color:red;">10% off</span></div>
+        <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+
+
+    <!-- Add more cards as needed -->
+  </div>
+
+</body>
+</html>

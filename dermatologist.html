@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Dermatology Doctors at Medanta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+    }
+
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color:black;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .filters {
+      display: flex;
+      gap: 10px;
+      margin: 20px;
+    }
+
+    .filters button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      background: #eee;
+      font-size: 14px;
+    }
+    .filters button.active {
+      background: black;
+      color: #fff;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .designation {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .expertise, .qualification {
+      text-align: left;
+      font-size: 13px;
+      margin: 8px 0;
+    }
+
+    .expertise h4, .qualification h4 {
+      margin: 5px 0;
+      color: black;
+      font-size: 14px;
+    }
+
+    .card button {
+      margin-top: 12px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      background: black;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .card button:hover {
+      background: black;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Best Dermatology Doctors at Medanta</h1>
+</header>
+
+<div class="filters">
+  <button class="active">All</button>
+  <button>Gurugram</button>
+  <button>Lucknow</button>
+  <button>Patna</button>
+</div>
+
+<div class="container">
+  <div class="card">
+    <img src="doctor1.jpg" alt="Doctor Photo">
+    <div class="name">Dr. Ramanjit Singh</div>
+    <div class="designation">Associate Director – Dermatology</div>
+    <div class="expertise">
+      <h4>Specialization & Expertise</h4>
+      <ul>
+        <li>Clinical Dermatology</li>
+        <li>Cosmetic Dermatology</li>
+        <li>Paediatric Dermatology</li>
+        <li>Skin Allergy</li>
+      </ul>
+    </div>
+    <div class="qualification">
+      <h4>Qualification</h4>
+      <p>Dermatology</p>
+    </div>
+    <button>Meet the Doctor</button>
+  </div>
+
+  <div class="card">
+    <img src="doctor2.jpg" alt="Doctor Photo">
+    <div class="name">Dr. Shelly Kapoor</div>
+    <div class="designation">Associate Director – Dermatology</div>
+    <div class="expertise">
+      <h4>Specialization & Expertise</h4>
+      <ul>
+        <li>Aesthetic Dermatology</li>
+        <li>Dermatosurgery</li>
+        <li>Acne and Acne Scars</li>
+        <li>Geriatric Dermatology</li>
+      </ul>
+    </div>
+    <div class="qualification">
+      <h4>Qualification</h4>
+      <p>Dermatology</p>
+    </div>
+    <button>Meet the Doctor</button>
+  </div>
+
+  <div class="card">
+    <img src="doctor3.jpg" alt="Doctor Photo">
+    <div class="name">Dr. Pooja Aggarwal</div>
+    <div class="designation">Senior Consultant – Dermatology</div>
+    <div class="expertise">
+      <h4>Specialization & Expertise</h4>
+      <ul>
+        <li>Clinical Dermatology</li>
+        <li>Pediatric Dermatology</li>
+        <li>Aesthetic Dermatology</li>
+        <li>Dermatosurgery</li>
+      </ul>
+    </div>
+    <div class="qualification">
+      <h4>Qualification</h4>
+      <p>Dermatology</p>
+    </div>
+    <button>Meet the Doctor</button>
+  </div>
+</div>
+
+</body>
+</html>

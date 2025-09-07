@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oily Moisturizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-bottom: 1px solid #ddd;
+      background: #fff;
+      position: sticky;
+      top: 0;
+    }
+
+    header h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      padding: 15px;
+    }
+
+    .card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .card img {
+      width: 50%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 50px;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .title {
+      font-size: 13px;
+      color: #444;
+      margin: 5px 0;
+    }
+
+    .rating {
+      color: #f39c12;
+      font-size: 13px;
+    }
+
+    .price {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .price del {
+      font-size: 13px;
+      color: #888;
+      margin-left: 5px;
+    }
+
+    .offer {
+      color: green;
+      font-size: 13px;
+    }
+
+    .likes {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+    }
+    .img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+     .btn {
+      background-color: #111;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Oliy Skin Cleansers</h2>
+    <span>5 Products</span>
+  </header>
+
+  <div class="products">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="mm.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Minimalist</div>
+        <div class="title">Vitamin B5 10% Moisturizer</div>
+        <div class="rating">★★★★☆</div>
+        <div class="price">₹314 <del>₹349</del> <span style="color:red;">10% off</span></div>
+         <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="fm.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Foxtale</div>
+        <div class="title">Oil Balancing Moisturizer Azelaic Acid & Niacinamide</div>
+         <div class="rating">★★★☆☆</div>
+        <div class="price">₹401 <del>₹445</del> <span style="color:red;">10% off</span></div>
+         <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+      <!-- Card 3 -->
+    <div class="card">
+      <img src="dm.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Dot & Key</div>
+        <div class="title">Cica Niacinamide & Ceramides Oil-Free Face Moisturizer for acne poone & Oily skin</div>
+         <div class="rating">★★★★☆</div>
+        <div class="price">₹436 <del>₹495</del> <span style="color:red;">12% off</span></div>
+         <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+     <!-- Card 4 -->
+    <div class="card">
+      <img src="pm.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Plum</div>
+        <div class="title">2% Niacinamide and rice water Moisturizer - lightweight gel cream for oil-free hydration </div>
+         <div class="rating">★★★★★</div>
+        <div class="price">₹478 <del>₹525</del> <span style="color:red;">8% off</span></div>
+         <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+     <!-- Card 5 -->
+    <div class="card">
+      <img src="fom.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Foxtale</div>
+        <div class="title"> Nourishing Ceramide Moisturizer for 72hrs of hydrated, glowing skin</div>
+         <div class="rating">★★★★☆</div>
+        <div class="price">₹212 <del>₹249</del> <span style="color:red;">15% off</span></div>
+        <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+     <!-- Card 6 -->
+    <div class="card">
+      <img src="dcm.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">The Derma Co</div>
+        <div class="title">5% Niacinamide mattifing Moisturizer for oily & acne pron skin</div>
+         <div class="rating">★★★★☆</div>
+        <div class="price">₹395 <del>₹449</del> <span style="color:red;">12% off</span></div>
+        <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+     <!-- Card 7 -->
+    <div class="card">
+      <img src="foxm.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Foxtale</div>
+        <div class="title">Aquamarine oil free hydrating Moisturizer with hyaluronic acid for normal to oily skin</div>
+         <div class="rating">★★★★☆</div>
+        <div class="price">₹316 <del>₹395</del> <span style="color:red;">20% off</span></div>
+        <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+     <!-- Card 8 -->
+    <div class="card">
+      <img src="nm.jpg" alt="Product" class="img">
+      <div class="card-body">
+        <div class="brand">Neutrogena</div>
+        <div class="title">Hydro Boost hyaluronic acid water gel light face Moisturizer for normal, dry & oily skin</div>
+         <div class="rating">★★★★☆</div>
+        <div class="price">₹1071 <del>₹1100</del> <span style="color:red;">10% off</span></div>
+        <button class="btn">Add to Bag</button>
+      </div>
+    </div>
+
+
+
+    <!-- Add more cards as needed -->
+  </div>
+
+</body>
+</html>
